@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Shop | Liên Hệ</title>
+    <!-- Tailwind CSS qua CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome cho Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-blue-600 italic">S-SHOP</span>
+                </div>
+
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-8 text-gray-700 font-medium">
+                    <a href="trangchu.html" class="hover:text-blue-600 transition">Trang chủ</a>
+                    <a href="#" class="hover:text-blue-600 transition">Sản phẩm</a>
+                    <a href="#" class="hover:text-blue-600 transition">Khuyến mãi</a>
+                    <a href="lienhe.html" class="text-blue-600 transition font-bold">Liên hệ</a>
+                </div>
+
+                <!-- Icons (Search, Cart, User) -->
+                <div class="flex items-center space-x-5 text-gray-600">
+                    <button class="hover:text-blue-600"><i class="fa-solid fa-magnifying-glass text-xl"></i></button>
+                    <div class="relative cursor-pointer hover:text-blue-600">
+                        <i class="fa-solid fa-cart-shopping text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] rounded-full px-1.5 py-0.5">3</span>
+                    </div>
+                    <button class="hover:text-blue-600 hidden sm:block"><i class="fa-solid fa-user text-xl"></i></button>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden text-2xl"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <a href="trangchu.html" class="text-gray-600 hover:text-blue-600">Trang chủ</a>
+        <span class="text-gray-400 mx-2">/</span>
+        <span class="text-gray-800 font-semibold">Liên hệ</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Liên Hệ Với Chúng Tôi</h1>
+            <p class="text-lg text-blue-100">Chúng tôi sẵn sàng hỗ trợ bạn 24/7. Hãy liên hệ với chúng tôi bất cứ lúc nào!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <!-- Contact Information -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Thông Tin Liên Hệ</h2>
+                
+                <!-- Address -->
+                <div class="flex items-start mb-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                            <i class="fa-solid fa-map-location-dot text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-bold text-gray-900">Địa Chỉ</h3>
+                        <p class="text-gray-600 mt-2">123 Đường Nguyễn Huệ<br>Quận 1, TP. Hồ Chí Minh<br>Việt Nam</p>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="flex items-start mb-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                            <i class="fa-solid fa-phone text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-bold text-gray-900">Điện Thoại</h3>
+                        <p class="text-gray-600 mt-2">
+                            <a href="tel:+84123456789" class="hover:text-blue-600">(+84) 123 456 789</a><br>
+                            <a href="tel:+84987654321" class="hover:text-blue-600">(+84) 987 654 321</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-start mb-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                            <i class="fa-solid fa-envelope text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-bold text-gray-900">Email</h3>
+                        <p class="text-gray-600 mt-2">
+                            <a href="mailto:support@s-shop.vn" class="hover:text-blue-600">support@s-shop.vn</a><br>
+                            <a href="mailto:sales@s-shop.vn" class="hover:text-blue-600">sales@s-shop.vn</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hours -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                            <i class="fa-solid fa-clock text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-bold text-gray-900">Giờ Làm Việc</h3>
+                        <p class="text-gray-600 mt-2">
+                            Thứ 2 - Thứ 6: 08:00 - 17:00<br>
+                            Thứ 7: 09:00 - 12:00<br>
+                            Chủ Nhật: Nghỉ
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Gửi Tin Nhắn</h2>
+                <form class="space-y-6" id="contactForm">
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Họ và Tên</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Nhập tên của bạn">
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Nhập email của bạn">
+                    </div>
+
+                    <!-- Phone -->
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Số Điện Thoại</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Nhập số điện thoại của bạn">
+                    </div>
+
+                    <!-- Subject -->
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Chủ Đề</label>
+                        <select id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                            <option value="">Chọn chủ đề</option>
+                            <option value="sales">Tư vấn bán hàng</option>
+                            <option value="support">Hỗ trợ kỹ thuật</option>
+                            <option value="complaint">Khiếu nại</option>
+                            <option value="other">Khác</option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Tin Nhắn</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Nhập tin nhắn của bạn"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg">
+                        <i class="fa-solid fa-paper-plane mr-2"></i>Gửi Tin Nhắn
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Bản Đồ</h2>
+            <div class="rounded-lg overflow-hidden shadow-lg h-96">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.256891651332!2d106.69810951529177!3d10.772656592028157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f37ba5bcfad%3A0x6c5c5d5c5d5c5d5d!2z44CENi3Dm1U!5e0!3m2!1svi!2s!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Về S-SHOP</h3>
+                    <p class="text-gray-400 text-sm">Chúng tôi cung cấp các sản phẩm công nghệ và thời trang chất lượng cao với mức giá cạnh tranh nhất.</p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Danh Mục</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Điện thoại</a></li>
+                        <li><a href="#" class="hover:text-white transition">Laptop</a></li>
+                        <li><a href="#" class="hover:text-white transition">Phụ kiện</a></li>
+                        <li><a href="#" class="hover:text-white transition">Đồng hồ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Hỗ Trợ</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition">Chính sách bảo hành</a></li>
+                        <li><a href="#" class="hover:text-white transition">Hướng dẫn mua hàng</a></li>
+                        <li><a href="lienhe.html" class="hover:text-white transition">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Theo Dõi Chúng Tôi</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition">
+                            <i class="fa-brands fa-facebook text-white"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 p-2 rounded-full hover:bg-blue-500 transition">
+                            <i class="fa-brands fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 p-2 rounded-full hover:bg-pink-700 transition">
+                            <i class="fa-brands fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="bg-red-600 p-2 rounded-full hover:bg-red-700 transition">
+                            <i class="fa-brands fa-youtube text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-center text-gray-400 text-sm">&copy; 2024 S-SHOP. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Validation Script -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if(name && email && message) {
+                alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.');
+                this.reset();
+            }
+        });
+    </script>
+
+</body>
+</html>
