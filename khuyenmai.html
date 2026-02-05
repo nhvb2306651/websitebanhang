@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Shop | Khuyến Mãi</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232563eb' rx='10'/%3E%3Ctext x='50' y='65' font-size='60' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+    <!-- Tailwind CSS qua CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome cho Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { 
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #ECFEF3, #D1FAE5, #A7F3D0);
+            min-height: 100vh;
+        }
+        .promo-banner {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E72 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .promo-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .discount-tag {
+            background: linear-gradient(135deg, #FFD93D 0%, #FFC93C 100%);
+            box-shadow: 0 4px 15px rgba(255, 217, 61, 0.4);
+        }
+        .offer-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .offer-card:hover {
+            transform: translateY(-5px);
+            border-color: #FF6B6B;
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-blue-600 italic">S-SHOP</span>
+                </div>
+
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-8 text-gray-700 font-medium">
+                    <a href="trangchu.html" class="hover:text-blue-600 transition">Trang chủ</a>
+                    <a href="#" class="hover:text-blue-600 transition">Sản phẩm</a>
+                    <a href="khuyenmai.html" class="text-blue-600 transition font-bold">Khuyến mãi</a>
+                    <a href="lienhe.html" class="hover:text-blue-600 transition">Liên hệ</a>
+                </div>
+
+                <!-- Icons (Search, Cart, User) -->
+                <div class="flex items-center space-x-5 text-gray-600">
+                    <button class="hover:text-blue-600"><i class="fa-solid fa-magnifying-glass text-xl"></i></button>
+                    <div class="relative cursor-pointer hover:text-blue-600">
+                        <i class="fa-solid fa-cart-shopping text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] rounded-full px-1.5 py-0.5">3</span>
+                    </div>
+                    <button class="hover:text-blue-600 hidden sm:block"><i class="fa-solid fa-user text-xl"></i></button>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden text-2xl"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div class="promo-banner py-16 md:py-24 text-white relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">🎉 Chương Trình Khuyến Mãi</h1>
+            <p class="text-lg md:text-xl text-red-100">Những ưu đãi tuyệt vời chỉ có tại S-SHOP</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Flash Sale -->
+        <section class="mb-16">
+            <div class="flex items-center mb-8">
+                <i class="fa-solid fa-fire text-3xl text-red-500 mr-3"></i>
+                <h2 class="text-3xl font-bold text-gray-800">Flash Sale</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="offer-card bg-white rounded-lg overflow-hidden shadow-md p-6">
+                    <div class="relative mb-4">
+                        <div class="bg-gradient-to-br from-blue-400 to-blue-500 h-48 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-laptop text-white text-6xl"></i>
+                        </div>
+                        <div class="discount-tag absolute -top-3 -right-3 text-center py-2 px-4 rounded-full font-bold text-lg shadow-lg">
+                            -30%
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-800">Laptop Gaming</h3>
+                    <p class="text-gray-600 text-sm mb-3">Intel i7, RTX 4060, 16GB RAM</p>
+                    <div class="flex items-baseline gap-2 mb-4">
+                        <span class="text-2xl font-bold text-red-600">16.790.000₫</span>
+                        <span class="text-sm text-gray-500 line-through">23.990.000₫</span>
+                    </div>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
+                        Mua ngay
+                    </button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="offer-card bg-white rounded-lg overflow-hidden shadow-md p-6">
+                    <div class="relative mb-4">
+                        <div class="bg-gradient-to-br from-purple-400 to-purple-500 h-48 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-headphones text-white text-6xl"></i>
+                        </div>
+                        <div class="discount-tag absolute -top-3 -right-3 text-center py-2 px-4 rounded-full font-bold text-lg shadow-lg">
+                            -25%
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-800">Tai Nghe Cao Cấp</h3>
+                    <p class="text-gray-600 text-sm mb-3">Bluetooth 5.0, Pin 40h, Noise Cancel</p>
+                    <div class="flex items-baseline gap-2 mb-4">
+                        <span class="text-2xl font-bold text-red-600">2.925.000₫</span>
+                        <span class="text-sm text-gray-500 line-through">3.900.000₫</span>
+                    </div>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
+                        Mua ngay
+                    </button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="offer-card bg-white rounded-lg overflow-hidden shadow-md p-6">
+                    <div class="relative mb-4">
+                        <div class="bg-gradient-to-br from-green-400 to-green-500 h-48 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-mobile text-white text-6xl"></i>
+                        </div>
+                        <div class="discount-tag absolute -top-3 -right-3 text-center py-2 px-4 rounded-full font-bold text-lg shadow-lg">
+                            -40%
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-800">Điện Thoại Thông Minh</h3>
+                    <p class="text-gray-600 text-sm mb-3">Camera 108MP, Snapdragon 888</p>
+                    <div class="flex items-baseline gap-2 mb-4">
+                        <span class="text-2xl font-bold text-red-600">5.994.000₫</span>
+                        <span class="text-sm text-gray-500 line-through">9.990.000₫</span>
+                    </div>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
+                        Mua ngay
+                    </button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="offer-card bg-white rounded-lg overflow-hidden shadow-md p-6">
+                    <div class="relative mb-4">
+                        <div class="bg-gradient-to-br from-orange-400 to-orange-500 h-48 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-tablet text-white text-6xl"></i>
+                        </div>
+                        <div class="discount-tag absolute -top-3 -right-3 text-center py-2 px-4 rounded-full font-bold text-lg shadow-lg">
+                            -35%
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-800">Máy Tính Bảng</h3>
+                    <p class="text-gray-600 text-sm mb-3">11 inch, 128GB, 4G LTE</p>
+                    <div class="flex items-baseline gap-2 mb-4">
+                        <span class="text-2xl font-bold text-red-600">8.450.000₫</span>
+                        <span class="text-sm text-gray-500 line-through">13.000.000₫</span>
+                    </div>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
+                        Mua ngay
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional Banner -->
+        <section class="mb-16 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-lg p-8 md:p-12 text-white shadow-lg">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div>
+                    <h3 class="text-3xl font-bold mb-2">Mua 2 Tặng 1</h3>
+                    <p class="text-lg mb-2">Chọn 2 sản phẩm bất kỳ, tặng thêm 1 sản phẩm cùng loại</p>
+                    <p class="text-sm">Áp dụng cho tất cả sản phẩm công nghệ</p>
+                </div>
+                <button class="mt-6 md:mt-0 bg-white text-orange-500 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition text-lg">
+                    Xem chi tiết
+                </button>
+            </div>
+        </section>
+
+        <!-- Loyalty Program -->
+        <section class="mb-16">
+            <div class="flex items-center mb-8">
+                <i class="fa-solid fa-gift text-3xl text-yellow-500 mr-3"></i>
+                <h2 class="text-3xl font-bold text-gray-800">Chương Trình Thành Viên</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Bronze -->
+                <div class="bg-white rounded-lg p-8 shadow-md border-l-4 border-yellow-600">
+                    <h3 class="text-2xl font-bold text-yellow-600 mb-4">Hạng Bronze</h3>
+                    <ul class="space-y-3 mb-6 text-gray-600">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> Giảm 5% mỗi đơn hàng</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> Miễn phí vận chuyển từ 500k</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> Hỗ trợ khách hàng 24/7</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> Ưu tiên thanh toán</li>
+                    </ul>
+                    <button class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded transition">
+                        Tham gia ngay
+                    </button>
+                </div>
+
+                <!-- Silver -->
+                <div class="bg-white rounded-lg p-8 shadow-md border-l-4 border-gray-400 transform md:scale-105">
+                    <h3 class="text-2xl font-bold text-gray-400 mb-4">Hạng Silver</h3>
+                    <ul class="space-y-3 mb-6 text-gray-600">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> Giảm 10% mỗi đơn hàng</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> Miễn phí vận chuyển toàn quốc</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> Ưu tiên hỗ trợ VIP</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> Bảo hành mở rộng 12 tháng</li>
+                    </ul>
+                    <button class="w-full bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded transition">
+                        Tham gia ngay
+                    </button>
+                </div>
+
+                <!-- Gold -->
+                <div class="bg-white rounded-lg p-8 shadow-md border-l-4 border-yellow-500">
+                    <h3 class="text-2xl font-bold text-yellow-500 mb-4">Hạng Gold</h3>
+                    <ul class="space-y-3 mb-6 text-gray-600">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> Giảm 20% mỗi đơn hàng</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> Miễn phí vận chuyển + bảo hiểm</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> Truy cập sớm các khuyến mãi</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> Quà tặng sinh nhật hàng năm</li>
+                    </ul>
+                    <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded transition">
+                        Tham gia ngay
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Events -->
+        <section class="mb-16">
+            <div class="flex items-center mb-8">
+                <i class="fa-solid fa-calendar-days text-3xl text-blue-600 mr-3"></i>
+                <h2 class="text-3xl font-bold text-gray-800">Sự Kiện Đặc Biệt</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Event 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="bg-gradient-to-r from-red-500 to-pink-500 p-6 text-white">
+                        <h3 class="text-2xl font-bold mb-2">Sale Cuối Năm</h3>
+                        <p class="mb-4">Giảm đến 50% cho toàn bộ sản phẩm</p>
+                        <div class="flex items-center gap-8">
+                            <div>
+                                <p class="text-sm">Ngày bắt đầu</p>
+                                <p class="text-xl font-bold">15/12/2025</p>
+                            </div>
+                            <div>
+                                <p class="text-sm">Ngày kết thúc</p>
+                                <p class="text-xl font-bold">31/12/2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition">
+                            Chi tiết sự kiện
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="bg-gradient-to-r from-green-500 to-teal-500 p-6 text-white">
+                        <h3 class="text-2xl font-bold mb-2">Lễ Ưu Đãi Tết</h3>
+                        <p class="mb-4">Nhận quà tặng + Giảm 35% cho tất cả sản phẩm</p>
+                        <div class="flex items-center gap-8">
+                            <div>
+                                <p class="text-sm">Ngày bắt đầu</p>
+                                <p class="text-xl font-bold">01/01/2026</p>
+                            </div>
+                            <div>
+                                <p class="text-sm">Ngày kết thúc</p>
+                                <p class="text-xl font-bold">15/02/2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <button class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition">
+                            Chi tiết sự kiện
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="bg-blue-600 rounded-lg p-8 md:p-12 text-white text-center mb-16">
+            <h2 class="text-3xl font-bold mb-3">Nhận Thông Báo Khuyến Mãi</h2>
+            <p class="mb-6 text-blue-100">Đăng ký nhận email để cập nhật các khuyến mãi mới nhất</p>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+                <input type="email" placeholder="Nhập email của bạn..." class="flex-1 px-4 py-3 rounded text-gray-800 focus:outline-none">
+                <button class="bg-white text-blue-600 font-bold px-6 py-3 rounded hover:bg-gray-100 transition">
+                    Đăng ký
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold text-white mb-4 flex items-center">
+                        <span class="text-2xl font-bold text-blue-400 italic mr-2">S-SHOP</span>
+                    </h4>
+                    <p class="text-sm">Cửa hàng điện thoại, máy tính và phụ kiện số 1 Việt Nam</p>
+                </div>
+                <div>
+                    <h5 class="font-bold text-white mb-4">Liên kết nhanh</h5>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="trangchu.html" class="hover:text-white transition">Trang chủ</a></li>
+                        <li><a href="#" class="hover:text-white transition">Sản phẩm</a></li>
+                        <li><a href="khuyenmai.html" class="hover:text-white transition">Khuyến mãi</a></li>
+                        <li><a href="lienhe.html" class="hover:text-white transition">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-white mb-4">Hỗ trợ</h5>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Câu hỏi thường gặp</a></li>
+                        <li><a href="#" class="hover:text-white transition">Chính sách bảo mật</a></li>
+                        <li><a href="#" class="hover:text-white transition">Điều khoản sử dụng</a></li>
+                        <li><a href="#" class="hover:text-white transition">Hướng dẫn mua hàng</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-white mb-4">Kết nối với chúng tôi</h5>
+                    <div class="flex space-x-4 text-xl">
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; 2026 S-SHOP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
